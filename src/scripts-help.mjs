@@ -28,7 +28,7 @@ function main() {
   
   const reSection = /^\s*={3,}\s*(.*?)\s*={0,}\s*$/;
   const rows = [];
-  for (const scriptName of Object.keys(pkg.scripts)) {
+  for (const [scriptName, scriptDef] of Object.entries(pkg.scripts)) {
     const match = reSection.exec(scriptName);
     if (match) {
       maybeLogRows(rows, {descColWidth});
@@ -43,7 +43,7 @@ function main() {
     if (scriptHelp) {
       row.push(scriptHelp);
     } else {
-      row.push('');
+      row.push(esc(ansi.FgBrightBlack, scriptDef));
     }
     rows.push(row);
   }

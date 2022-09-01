@@ -17,6 +17,8 @@ cd demo/
 npm run help
 ```
 
+If you do this, you’ll see the font styles and colors that scripts-help uses (which, alas, can’t be shown via GitHub’s Markdown code blocks).
+
 ## Setting up `package.json`
 
 `package.json`:
@@ -66,7 +68,7 @@ Output of `npm run help` inside `demo/`:
 Package “demo”
 
 ╔══════╤════════════════════════════════════════════════════════════════════════╗
-║ help │                                                                        ║
+║ help │ scripts-help                                                           ║
 ╚══════╧════════════════════════════════════════════════════════════════════════╝
 
 Building
