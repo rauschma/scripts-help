@@ -1,5 +1,11 @@
 # scripts-help
 
+Installation:
+
+```
+npm install @rauschma/scripts-help
+```
+
 `package.json`:
 
 ```json
