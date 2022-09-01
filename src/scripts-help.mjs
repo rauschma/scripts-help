@@ -41,9 +41,9 @@ function main() {
     const row = [esc(ansi.Bold, scriptName)];
     const scriptHelp = pkg['scripts-help'][scriptName];
     if (scriptHelp) {
-      row.push(scriptHelp);
+      row.push(scriptHelp.trim());
     } else {
-      row.push(esc(ansi.FgBrightBlack, scriptDef));
+      row.push(esc(ansi.FgBrightBlack, scriptDef.trim()));
     }
     rows.push(row);
   }
