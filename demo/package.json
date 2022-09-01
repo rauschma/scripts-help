@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "help": "node ../src/scripts-help.mjs",
+    "help": "node ../src/scripts-help.mjs -w 40",
     "\n========== Building ==========": "",
     "tsc": "tsc",
     "tscwatch": "tsc --watch",

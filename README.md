@@ -27,7 +27,7 @@ If you do this, you’ll see the font styles and colors that scripts-help uses (
 {
   "private": true,
   "scripts": {
-    "help": "scripts-help",
+    "help": "scripts-help -w 40",
     "\n========== Building ==========": "",
     "tsc": "tsc",
     "tscwatch": "tsc --watch",
@@ -46,7 +46,7 @@ Output of `npm run` (without arguments) inside `demo/`:
 
 ```
   help
-    scripts-help
+    scripts-help -w 40
 
 ========== Building ==========
 
@@ -67,22 +67,24 @@ Output of `npm run help` inside `demo/`:
 ```
 Package “demo”
 
-╔══════╤════════════════════════════════════════════════════════════════════════╗
-║ help │ scripts-help                                                           ║
-╚══════╧════════════════════════════════════════════════════════════════════════╝
+╔══════╤══════════════════════════════════════════╗
+║ help │ node ../src/scripts-help.mjs -w 40       ║
+╚══════╧══════════════════════════════════════════╝
 
 Building
 
-╔══════════╤════════════════════════════════════════════════════════════════════════╗
-║ tsc      │ Compile the TypeScript to JavaScript.                                  ║
-╟──────────┼────────────────────────────────────────────────────────────────────────╢
-║ tscwatch │ Watch the TypeScript source code and compile it incrementally when and ║
-║          │ if there are changes.                                                  ║
-╚══════════╧════════════════════════════════════════════════════════════════════════╝
+╔══════════╤══════════════════════════════════════════╗
+║ tsc      │ Compile the TypeScript to JavaScript.    ║
+╟──────────┼──────────────────────────────────────────╢
+║ tscwatch │ Watch the TypeScript source code and     ║
+║          │ compile it incrementally when and if     ║
+║          │ there are changes.                       ║
+╚══════════╧══════════════════════════════════════════╝
 
 Serving
 
-╔═══════╤════════════════════════════════════════════════════════════════════════╗
-║ serve │ Serve the generated website via a local server.                        ║
-╚═══════╧════════════════════════════════════════════════════════════════════════╝
+╔═══════╤══════════════════════════════════════════╗
+║ serve │ Serve the generated website via a local  ║
+║       │ server.                                  ║
+╚═══════╧══════════════════════════════════════════╝
 ```
