@@ -8,7 +8,16 @@ npm install @rauschma/scripts-help
 
 ## Setting up `package.json`
 
-File [`demo/package.json`](https://github.com/rauschma/scripts-help/blob/main/demo/package.json) demonstrates the setup:
+Directory [`demo/`](https://github.com/rauschma/scripts-help/blob/main/demo/package.json) shows how to set up `package.json`. If you want to see the output of `scripts-help` in your terminal, you can clone this repository and:
+
+```
+cd scripts-help/
+npm install
+cd demo/
+npm run help
+```
+
+`package.json`:
 
 ```json
 {
