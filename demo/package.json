@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "help": "node ../src/scripts-help.mjs",
+    "\n========== Building ==========": "",
+    "tsc": "tsc",
+    "tscwatch": "tsc --watch",
+    "\n========== Serving ==========": "",
+    "serve": "serve ./site/"
+  },
+  "scripts-help": {
+    "tsc": "Compile the TypeScript to JavaScript.",
+    "tscwatch": "Watch the TypeScript source code and compile it incrementally when and if there are changes.",
+    "serve": "Serve the generated website via a local server."
+  }
+}

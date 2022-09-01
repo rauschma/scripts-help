@@ -1,0 +1,19 @@
+{
+  "name": "scripts-help",
+  "version": "1.0.0",
+  "author": "Axel Rauschmayer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauschma/scripts-help.git"
+  },
+  "bin": {
+    "scripts-help": "./src/scripts-help.mjs"
+  },
+  "engines": {
+    "node": ">=18.7.0"
+  },
+  "dependencies": {
+    "table": "^6.8.0"
+  }
+}
