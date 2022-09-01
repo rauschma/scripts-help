@@ -1,12 +1,14 @@
 # scripts-help
 
-Installation:
+## Installation
 
 ```
 npm install @rauschma/scripts-help
 ```
 
-`package.json`:
+## Setting up `package.json`
+
+File [`demo/package.json`](https://github.com/rauschma/scripts-help/blob/main/demo/package.json) demonstrates the setup:
 
 ```json
 {
@@ -27,7 +29,7 @@ npm install @rauschma/scripts-help
 }
 ```
 
-Output of `npm run` (without arguments):
+Output of `npm run` (without arguments) inside `demo/`:
 
 ```
   help
@@ -47,7 +49,7 @@ Output of `npm run` (without arguments):
 ```
 
 
-Output of `npm run help`:
+Output of `npm run help` inside `demo/`:
 
 ```
 Package “demo”
