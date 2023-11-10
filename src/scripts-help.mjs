@@ -13,9 +13,9 @@ function main() {
       type: 'string',
       short: 'w',
     },
-    'key': {
+    'property': {
       type: 'string',
-      short: 'k',
+      short: 'p',
       default: 'scripts-help',
     },
   };
@@ -44,7 +44,7 @@ function main() {
       continue;
     }
     const row = [esc(ansi.Bold, scriptName)];
-    const scriptHelp = pkg[parsed.values['key']][scriptName];
+    const scriptHelp = pkg[parsed.values['property']][scriptName];
     if (scriptHelp) {
       row.push(scriptHelp.trim());
     } else {
