@@ -13,6 +13,11 @@ function main() {
       type: 'string',
       short: 'w',
     },
+    'property': {
+      type: 'string',
+      short: 'p',
+      default: 'scripts-help',
+    },
   };
   const parsed = util.parseArgs({options});
   let descColWidth = Number.parseInt(parsed.values['desc-col-width']);
@@ -39,7 +44,7 @@ function main() {
       continue;
     }
     const row = [esc(ansi.Bold, scriptName)];
-    const scriptHelp = pkg['scripts-help'][scriptName];
+    const scriptHelp = pkg[parsed.values['property']][scriptName];
     if (scriptHelp) {
       row.push(scriptHelp.trim());
     } else {
